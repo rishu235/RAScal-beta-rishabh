@@ -69,6 +69,3 @@ def find_calories_expenditure(command):
                 comments = "I didn't find anything."
     
     return(strftime("%Y-%m-%d %H:%M:%S", localtime()), command, ans, comments)
-
-command = "paneer bhurji"
-print(find_calories_intake(command))
