@@ -28,13 +28,10 @@ def find_calories_intake(command):
 
     try:
         for tag in soup.find_all(attrs={"data-attrid":"kc:/food/food:energy"})[0]:
-            ans = tag.text.partition("calories")[0].replace(u'\xa0', u' ')
+            ans = tag.text.partition("calories")[0]
     except IndexError:
-        for tag in soup.find_all(attrs={"data-attrid":"hw:/collection/foods:energy"})[0]:
-            ans = tag.text.partition("calories")[0].replace(u'\xa0', u' ')
-        if(ans==None):
-            for tag in soup.find_all(attrs={"data-tts":"answers"}):
-                ans = tag.text.partition("calories")[0].replace(u'\xa0', u' ')
+        for tag in soup.find_all(attrs={"data-tts":"answers"}):
+            ans = tag.text.partition("calories")[0]
         if(ans==None):
             for tag in soup.find_all(attrs={"data-attrid":"wa:/description"}):
                 comments = tag.text
@@ -72,3 +69,6 @@ def find_calories_expenditure(command):
                 comments = "I didn't find anything."
     
     return(strftime("%Y-%m-%d %H:%M:%S", localtime()), command, ans, comments)
+
+command = "paneer bhurji"
+print(find_calories_intake(command))
