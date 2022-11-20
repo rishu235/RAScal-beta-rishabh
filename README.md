@@ -2,12 +2,17 @@
 RAS-Cal app for HTC-2022
 RAS-Cal: The Health Pal
 
-Motivation: Continuous health monitoring has been a topic of immense importance in the recent times (after the covid pandemic).
+**Goal:**
+Our goal is to make effective health monitoring accessible to all at an easy and pleasing way to improve the health of general masses and to monitor the 
+status of our users to meet the UN sustainability goals while not compromising on ethics.
+
+**Motivation**: Continuous health monitoring has been a topic of immense importance in the recent times (after the covid pandemic).
 The world health statistics report also emphasizes the importance of health monitoring for the sustainable development goals.
 Non-profit organizations around the world have played an immense role to extend health monitoring facilities for the people. 
 Effective and affordable health monitoring applications have been undergoing changes through time with development of new hardware and software tools. 
 A report suggests that there are over 50k apps for health care available, making it difficult for a user to choose the right app. 
-Our application:
+
+**Application**:
 In this product which we have named “RAS-Cal” we propose development of a single framework encompassing of multiple technologies allowing essential
 information to be passed to the user and other health care officials with the goal to improve the overall health of general masses.
 The idea revolves around collecting data through all possible sources, such as voice from users, though health monitoring devices, and various health apps 
@@ -15,6 +20,7 @@ installed in the users’ phone. The voice data collected is transformed to text
 framework to extract important information to allow processing and give insights to the user. In this product, we will ensure that the data collected 
 will be used in accordance with strict security and other privacy guidelines setup to eliminate any kind of violations or data breaches possible 
 (e.g., following HIPAA Health Insurance Portability and Accountability Act guidelines) . 
+
 This data is then processed at a two levels structure – (i) on the device (called edge intelligence technology) and (ii) cloud processing. 
 The edge intelligence will allow for rapid-in-event decision making and in scenarios where cloud is not available (no internet facility). 
 The cloud processing will be essential to provide data-driven insights via deep neural network-based architectures which involve extreme computations. 
@@ -28,9 +34,8 @@ Therefore, we have used flask framework to integrate our python files in a web a
 Further, we have deployed this in the Amazon web services (AWS) servers. To enable easy access of our services, as a first step we have developed an app in the MIT app inventor 
 which allows the users to access our services at the tap of a button. This showcases the utility of our application. In future, we can extend it to android and macOS
 environments to make it easy to access.
-Our goal is to make effective health monitoring accessible to all at an easy and pleasing way to improve the health of general masses and to monitor the 
-status of our users to meet the UN sustainability goals while not compromising on ethics.
-Demo
+
+**Demo**
 In the demo, we show a live recording of the calorie intake aspect of the application. While our accents have allowed us to accurately capture the word "Rajma",
 we used prerecorded audio files for a native english speaker (main_demo.py) from (https://dictionary.cambridge.org/pronunciation/english) for "cinnamon bun". These files were
 were provided as a .wav to the speech recognition platform.
