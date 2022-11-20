@@ -30,8 +30,11 @@ def find_calories_intake(command):
         for tag in soup.find_all(attrs={"data-attrid":"kc:/food/food:energy"})[0]:
             ans = tag.text.partition("calories")[0]
     except IndexError:
-        for tag in soup.find_all(attrs={"data-tts":"answers"}):
+        for tag in soup.find_all(attrs={"data-attrid":"hw:/collection/foods:energy"})[0]:
             ans = tag.text.partition("calories")[0]
+        if(ans==None):
+            for tag in soup.find_all(attrs={"data-tts":"answers"}):
+                ans = tag.text.partition("calories")[0]
         if(ans==None):
             for tag in soup.find_all(attrs={"data-attrid":"wa:/description"}):
                 comments = tag.text
