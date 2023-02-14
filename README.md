@@ -36,6 +36,6 @@ which allows the users to access our services at the tap of a button. This showc
 environments to make it easy to access.
 
 **Demo**
-In the demo, we show a live recording of the calorie intake aspect of the application. While our accents have allowed us to accurately capture the word "Rajma",
-we used prerecorded audio files for a native english speaker (main_demo.py) from (https://dictionary.cambridge.org/pronunciation/english) for "cinnamon bun". These files were
+In the [demo video](https://www.youtube.com/watch?v=VSc8lBewxj4), we show a live recording of the calorie intake aspect of the application. While our accents have allowed us to accurately capture the word "Rajma",
+we used prerecorded audio files for a native english speaker (main_demo.py) from [Cambridge dictionary](https://dictionary.cambridge.org/pronunciation/english) for "cinnamon bun". These files were
 were provided as a .wav to the speech recognition platform.
